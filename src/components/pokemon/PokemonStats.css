@@ -1,0 +1,138 @@
+/* .container-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--card_gray);
+    padding: 14px 12px;
+    border-radius: 10px;
+  }
+  
+  .bar-item {
+    width: 100px;
+  }
+  
+  .bar {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .bar-active {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .container-label {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .value {
+    color: var(--brand_dark);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .label {
+    font-family: "OldSansBlack";
+    text-transform: capitalize;
+  }  
+
+  .progress-bar {
+    background-color: #ec5858;
+    background-image: linear-gradient(
+        to right,
+        #ec5858 0%,
+        #ffe05d 45%,
+        #2ec1ac 100%
+    );
+    position: relative;
+    height: 20px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar > span {
+    display: block;
+    height: 100%;
+    background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+}
+
+.pokemon--stats {
+  width: 100%;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.pokemon-stat-item {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-content: center;
+}
+
+.pokemon-stat-item div:first-child {
+  font-weight: 700;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.pokemon--card {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 60px #e5e5e5;
+  border-radius: 20px;
+  min-width: 250px;
+  margin: 1rem;
+  padding: 1rem 0;
+}
+
+.pokemon--profile {
+  position: relative;
+}
+
+.pokemon--image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.pokemon--name {
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.npbtn{
+  display:flex;
+  margin: 50px 10%;
+  justify-content: space-between;
+}
+
+.npbtn i{
+  font-size: 65px;
+  transition: 0.4s ease-in;
+  background-color: black;
+  border:8px solid black;
+  border-radius: 50%;
+  color: red;
+}
+
+.npbtn i:hover{
+    color: white;
+} */
