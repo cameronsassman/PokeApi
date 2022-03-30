@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/layout/Navbar";
 
 import PokeCard from "../components/pokemon/PokemonCard";
 import classes from '../components/pokemon/PokemonList.module.css'
@@ -8,7 +7,6 @@ import LoadPokeball from "../components/ui/Loader";
 
 const AllPokemon = () => {
     const[allPokemons, setAllPokemons] = useState([])
-    const [searchData,setSearchData] =useState("")
     const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0')
     const [isLoading, setIsLoading] = useState(true)
  
@@ -19,13 +17,14 @@ const AllPokemon = () => {
  
      setLoadMore(data.next)
  
-     const createPokemonObject = () => {
-        fetch(`https://pokeapi.co/api/v2/pokemon/${searchData}`)
+     function createPokemonObject(results)  {
+       results.forEach( async pokemon => {
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         .then(res => res.json())
-        .then (data => setAllPokemons(console.log(data.results)))
-        
+        .then (data => setAllPokemons(currentList => [...currentList, data]))
+      })
      }
-     createPokemonObject()
+     createPokemonObject(data.results)
    }
  
   useEffect(() => {
@@ -34,23 +33,23 @@ const AllPokemon = () => {
 
     return (
         <section>
-            <Navbar searchResult={setSearchData} />
             {isLoading ? <LoadPokeball /> : (
                 <div className={classes.container}>
-            {allPokemons?allPokemons.map((poke, index) => {
-                return (
-                    <PokeCard
-                    key={index}
-                    pokemon={poke}
-                />
-                )
-            }
-            ):null}
-        </div>
+                    {allPokemons.map((poke, index) => {
+                        return (
+                            <PokeCard
+                            key={index}
+                            pokemon={poke}
+                        />
+                        )
+                    }
+                    )}
+                </div>
             )}
         <div>
-        <i className="fa fa-arrow-circle-down" onClick={() => getAllPokemons()} ></i>
-        <button className={classes.load_more} onClick={() => getAllPokemons()}>Load more</button>
+        <div className={classes.npbtn}>
+            <i className="fa fa-arrow-circle-down" onClick={() => getAllPokemons()} ></i>
+        </div>
         </div>
         </section>
     )

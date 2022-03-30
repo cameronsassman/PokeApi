@@ -141,7 +141,7 @@ text-transform: capitalize;
 .scroll {
   margin: auto;
   position: relative;
-  height: 20%;
+  height: 300px;
   width: 80%;
   overflow-y: scroll;
 }

@@ -6,14 +6,12 @@ import LoadPokeball from "./components/ui/Loader";
 import Layout from './components/layout/Layout';
 
 import AllPokemon from './pages/AllPokemon';
-import PokemonDetail from './pages/PokemonDetails';
-import Search from './components/ui/Search';
-import Navbar from './components/layout/Navbar';
 
 
 function App() {
   return (
       <Layout>
+        <h2>Explore the game’s fictional world by looking for wild Pokémon creatures and learning all you need to know about every pokemon</h2>
         <Suspense fallback={
           <LoadPokeball />
         }>

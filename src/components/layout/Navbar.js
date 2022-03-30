@@ -9,9 +9,9 @@ const Navbar = () => {
     return (
         <header className={classes.header}>
             <img className={classes.logo} src={PokemonLogo} />
-            <nav className={classes.nav}>
+            {/* <nav className={classes.nav}>
                 <Search PokemonList={setPlist} />
-            </nav>
+            </nav> */}
         </header>
     )
 }

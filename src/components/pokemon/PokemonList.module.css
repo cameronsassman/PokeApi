@@ -16,3 +16,22 @@
     margin-top: 1rem;
     margin-left: 25%;
   }
+
+  .npbtn{
+    display:flex;
+    margin: 50px 10%;
+    justify-content: center;
+  }
+  
+  .npbtn i{
+    font-size: 65px;
+    transition: 0.4s ease-in;
+    background-color: black;
+    border:8px solid black;
+    border-radius: 50%;
+    color: red;
+  }
+  
+  .npbtn i:hover{
+      color: white;
+  }

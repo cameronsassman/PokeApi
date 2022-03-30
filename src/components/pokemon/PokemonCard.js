@@ -48,7 +48,7 @@ const PokeCard = ({ pokemon }) => {
                         className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(1)}
                     >
-                        Tab 1
+                        Description
                     </button>
                     <button
                         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
@@ -64,6 +64,28 @@ const PokeCard = ({ pokemon }) => {
                     </button>
                 </div>
                 <div className="content-tabs">
+                <div className={toggleState === 1 ? "content  active-content" : "content"}>
+                    <div className="pokemon--stats">
+                        <div className={classes.pokestats}>
+                            <div>
+                                Base Exp:
+                                <span className={classes.descspan}>{pokemon.base_experience}</span>
+                            </div>
+                            <div>
+                                Weight: 
+                                <span className={classes.descspan}>{pokemon.weight}</span>
+                            </div>
+                            <div>
+                                Height:
+                                <span className={classes.descspan}>{pokemon.height}</span>
+                            </div>
+                            <div className={classes.ability}>
+                                Ability:
+                                <span className={classes.descspan}>{pokemon.abilities[0].ability.name}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className={toggleState === 2 ? "content  active-content" : "content"}>
                     <div className="pokemon--stats">
                         {
