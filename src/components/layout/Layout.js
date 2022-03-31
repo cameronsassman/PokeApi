@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import Types from '../ui/Types'
+// import Types from '../ui/Types'
 import classes from './Layout.module.css'
 import Navbar from "./Navbar";
 
