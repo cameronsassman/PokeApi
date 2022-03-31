@@ -6,32 +6,31 @@
     flex-wrap: wrap;
 }
 
-.load_more {
-    background: #f5f5f5 linear-gradient(#f5f5f5,#f1f1f1) repeat-x;
-    border-radius: 2px;
-    border: 1px solid #c6c6c6;
-    color: #444;
-    padding: 0.5rem 1.5rem;
-    min-width: 50%;
-    margin-top: 1rem;
-    margin-left: 25%;
-  }
+.npbtn{
+  display:flex;
+  margin: 50px 10%;
+  justify-content: center;
+}
 
-  .npbtn{
-    display:flex;
-    margin: 50px 10%;
+.npbtn i{
+  font-size: 65px;
+  transition: 0.4s ease-in;
+  background-color: black;
+  border:8px solid black;
+  border-radius: 50%;
+  color: red;
+}
+
+.npbtn i:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+    position:relative;
+    z-index:0;
+    display: flex;
     justify-content: center;
-  }
-  
-  .npbtn i{
-    font-size: 65px;
-    transition: 0.4s ease-in;
-    background-color: black;
-    border:8px solid black;
-    border-radius: 50%;
-    color: red;
-  }
-  
-  .npbtn i:hover{
-      color: white;
-  }
+    flex-wrap: wrap;
+}
+}

@@ -21,3 +21,26 @@ h2 {
   border-bottom: 2px solid whitesmoke;
   padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 820px) {
+  h2 {
+    text-align: center;
+    font-family: Poppins;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  h2 {
+    text-align: center;
+    font-family: Poppins;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 10px;
+  }
+}
