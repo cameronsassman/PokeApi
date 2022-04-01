@@ -17,9 +17,6 @@ function App() {
         }>
           <Switch>
             <Route path='/' exact>
-              <Redirect to='/pokemon' /> 
-            </Route>
-            <Route path='/pokemon' exact>
               <AllPokemon />
             </Route>
           </Switch>
