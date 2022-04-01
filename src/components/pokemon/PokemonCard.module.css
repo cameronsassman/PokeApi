@@ -246,4 +246,28 @@
     z-index: 1;
     border-radius: 10px;
   }
+  .type {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    margin: 5px;
+    word-wrap: break-word;
+    height:auto;
+    font-family: 'Suez One';
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .pokeimg2{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    display: none;
+    z-index: 2;
+    place-items:center;
+    margin-left: 22%;
+  }
 }
