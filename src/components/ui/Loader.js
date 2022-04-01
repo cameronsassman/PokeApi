@@ -3,7 +3,7 @@ import Pokeball from '../../assets/Pokeball.gif'
 
 const LoadPokeball = () => {
   return (
-    <img className={classes.loading} src={Pokeball} />
+    <img className={classes.loading} src={Pokeball} alt="loader" />
   )
 }
 

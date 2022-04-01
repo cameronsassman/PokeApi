@@ -27,7 +27,7 @@ const PokeCard = ({ pokemon }) => {
       }
     return (
         <div>
-            <button className='pokebutton' onClick={openModal}><img className={classes.pokeimg2} src={pokemon.sprites.other["official-artwork"].front_default} alt="" />{pokemon.name}</button>
+            <button className='pokebutton' onClick={openModal}><img className={classes.pokeimg2} src={pokemon.sprites.other["official-artwork"].front_default} alt={pokemon.name} />{pokemon.name}</button>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}

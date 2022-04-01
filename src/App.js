@@ -1,5 +1,5 @@
 // import React, { Suspense } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { Suspense } from 'react';
 
 import LoadPokeball from "./components/ui/Loader";
