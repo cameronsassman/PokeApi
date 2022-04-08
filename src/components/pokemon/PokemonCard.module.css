@@ -85,15 +85,14 @@
   
 .pokestats div, .pokestats div span, .pokename{
     height:auto;
-    font-family: 'Suez One';
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 400;
+    font-family: 'Poppins';
 }
 
-.ability{
-      grid-column: 1/3;
-      height: 100%;
-      width: 100%;
+.text{
+  font-weight: 400;
+  font-family: 'Poppins';
 }
 
 .pokestats div span {
@@ -105,7 +104,7 @@
     background-color: #222;
     color: white;
     margin: 5px;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Poppins;
     word-wrap: break-word;
 }
@@ -116,7 +115,7 @@
     background-color: #222;
     color: white;
     margin: 5px;
-    font-size: 17px;
+    font-size: 20px;
     word-wrap: break-word;
 }
 
@@ -126,6 +125,7 @@
     padding: 1px 8px;
     border-radius: 12px;
     font-family: Poppins;
+    text-transform: capitalize;
 }
 
 .type {

@@ -75,19 +75,19 @@ const PokeCard = ({ pokemon }) => {
                         <div className={toggleState === 1 ? "content  active-content" : "content"}>
                             <div className="pokemon--stats">
                                 <div className={classes.pokestats}>
-                                    <div>
+                                    <div className={classes.text}>
                                         Base Exp:
                                         <span className={classes.descspan}>{pokemon.base_experience}</span>
                                     </div>
-                                    <div>
+                                    <div className={classes.text}>
                                         Weight: 
                                         <span className={classes.descspan}>{pokemon.weight}</span>
                                     </div>
-                                    <div>
+                                    <div className={classes.text}>
                                         Height:
                                         <span className={classes.descspan}>{pokemon.height}</span>
                                     </div>
-                                    <div className={classes.ability}>
+                                    <div className={classes.text}>
                                         Ability:
                                         <span className={classes.descspan}>{pokemon.abilities[0].ability.name}</span>
                                     </div>
